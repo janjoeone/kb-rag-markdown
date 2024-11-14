@@ -17,7 +17,7 @@ ENV MINIO_BUCKET_NAME="None"
 ENV MINIO_BUCKET_NAME_MARKDOWN="None"
 
 # 暴露端口（如 Flask 默认为 5000）
-EXPOSE 6000
+EXPOSE 6001
 
 # 运行 Python 应用
 CMD ["python", "app.py"]

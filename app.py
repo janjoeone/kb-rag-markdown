@@ -11,4 +11,4 @@ async def root() -> dict[str, str]:
 app.include_router(Files.fileRouter)
 
 if __name__ == '__main__':
-    uvicorn.run(app, host='0.0.0.0', port=6171)
+    uvicorn.run(app, host='0.0.0.0', port=6001)
