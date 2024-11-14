@@ -9,6 +9,13 @@ COPY . /app
 # 安装依赖项
 RUN pip install -r requirements.txt
 
+# 环境变量
+ENV MINIO_ENDPOINT="None"
+ENV MINIO_ACCESS_KEY="None"
+ENV MINIO_SECRET_KEY="None"
+ENV MINIO_BUCKET_NAME="None"
+ENV MINIO_BUCKET_NAME_MARKDOWN="None"
+
 # 暴露端口（如 Flask 默认为 5000）
 EXPOSE 6000
 
